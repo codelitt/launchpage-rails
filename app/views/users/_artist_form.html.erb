@@ -1,0 +1,4 @@
+<%= form_for(@user, :type => "1") do |f| %>
+<%= f.text_field :email, :placeholder => "Enter your email" %>
+<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<% end %>
