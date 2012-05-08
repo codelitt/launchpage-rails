@@ -1,4 +1,5 @@
-<%= form_for(@user, :type => "2") do |f| %>
+<%= form_for @user do |f| %>
 <%= f.text_field :email, :placeholder => "Enter your email" %>
+<%= f.hidden_field :usertype, :value => "1" %>
 <%= f.submit "Submit", class: "btn btn-large btn-primary" %>
 <% end %>

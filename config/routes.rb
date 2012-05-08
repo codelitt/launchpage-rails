@@ -4,6 +4,7 @@ LaunchpageRails::Application.routes.draw do
 	resources :users
 	
 	root :to => "users#new"
+	match 'success' => 'static#success'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

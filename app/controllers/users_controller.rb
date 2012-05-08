@@ -6,7 +6,8 @@ class UsersController < ApplicationController
   def create 
   	@user = User.new(params[:user])
   	if @user.save
-  		flash[:success] = "Post save message"
+  		flash[:success] = "POST save message"
+  		redirect_to '/success'
   	else 
   		render 'new'
   	end

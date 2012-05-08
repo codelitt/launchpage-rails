@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(:version => 20120503034727) do
     t.string   "email"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "type"
+    t.string   "usertype"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-  add_index "users", ["type"], :name => "index_users_on_type"
+  add_index "users", ["usertype"], :name => "index_users_on_type"
 
 end
