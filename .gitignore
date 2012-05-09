@@ -13,3 +13,6 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+#ignore customer mailer setup with private data
+/config/initializers/setup_mail.rb

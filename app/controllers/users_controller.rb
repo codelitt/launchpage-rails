@@ -6,10 +6,11 @@ class UsersController < ApplicationController
   def create 
   	@user = User.new(params[:user])
   	if @user.save
+  		UserMailer.registration_confirmation(@user).deliver
   		flash[:success] = "POST save message"
-  		redirect_to '/success'
+  		redirect_to '/success', :notice => 'Thanks for signing up!'
   	else 
-  		render 'new'
+  		render root_path
   	end
   end
 end
