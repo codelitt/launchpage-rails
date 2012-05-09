@@ -1,8 +1,8 @@
-<b>NOTE: App not styled</b>
+<b>NOTE: App not styled</b><br />
 This is a quick application to get up and running in Ruby on Rails for anyone looking to collect user emails and gauge interest before launching. We ([@mikebabb](http://github.com/mikebabb) and I), needed an application that provided signup for two types of users. Nothing on the market was really available for this… so we built it. Please fork and enjoy. I'm sure that someone will find bugs. I'm even more sure that someone in the community will make it even more awesome. This is filled with our content, but it wouldn't take you too long to change it to fit your need. Just a heads up. 
 Cheers!
 
-Features: </br>
+Features: <br />
 1.Email collection for two types of users <br />
 2.Social sharing <br />
 3. Auto mailer <br />
@@ -17,6 +17,6 @@ Features: </br>
 	:password 		=> "mypassword",
 	:authenticaton => "plain",
 	:enable_starttls_auto => true
-}</code></pre>
+}
 
-ActionMailer::Base.default_url_options[:host] = "localhost:3000"
+ActionMailer::Base.default_url_options[:host] = "localhost:3000"</code></pre>
