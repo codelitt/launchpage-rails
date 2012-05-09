@@ -1,9 +1,9 @@
 This is a quick application to get up and running in Ruby on Rails for anyone looking to collect user emails and gauge interest before launching. We ([@mikebabb](http://github.com/mikebabb) and I), needed an application that provided signup for two types of users. Nothing on the market was really available for this… so we built it. Please fork and enjoy. I'm sure that someone will find bugs. I'm even more sure that someone in the community will make it even more awesome. Cheers!
 
 Features:
-1.Email collection for two types of users
-2.Social sharing 
-3. Auto mailer
+1.Email collection for two types of users <br />
+2.Social sharing <br />
+3. Auto mailer <br />
 
 This is filled with our content. Wouldn't take you too long to change it to fit your needs, but just a heads up. 
 
