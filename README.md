@@ -7,7 +7,9 @@ Features: <br />
 2.Social sharing <br />
 3. Auto mailer <br />
 
-.gitignore includes the mail initializer because it contains passwords/usernames etc. Here is the layout for stmp through google. Just fill with your own information:
+Items you should change to customise it for your needs (baring the obvious. I'm not listing those. You'll see the title, etc.):
+
+1. The .gitignore includes the mail initializer because it contains passwords/usernames etc. Here is the layout for stmp through google. Just fill with your own information:
 
 <pre><code>ActionMailer::Base.smtp_settings = {
 	:address			=> "smtp.gmail.com",
@@ -19,4 +21,6 @@ Features: <br />
 	:enable_starttls_auto => true
 }
 
-ActionMailer::Base.default_url_options[:host] = "localhost:3000"</code></pre>
+ActionMailer::Base.default_url_options[:host] = "localhost:3000"</code></pre><br />
+
+2. You'll want to go into app/views/static/success and change the details of the social plugins to match your domain/twitter/facebook.  

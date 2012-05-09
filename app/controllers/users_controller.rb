@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   	if @user.save
   		UserMailer.registration_confirmation(@user).deliver
   		flash[:success] = "POST save message"
-  		redirect_to '/success', :notice => 'Thanks for signing up!'
+  		redirect_to '/success'
   	else 
   		render root_path
   	end
