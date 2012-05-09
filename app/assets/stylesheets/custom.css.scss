@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	padding-top: 60px;
+	padding-top: 10px;
 }
 
 section {
@@ -24,6 +24,7 @@ textarea {
 	margin-bottom: 10px;
 }
 
+
 /* header */
 
 #logo {
@@ -40,4 +41,26 @@ textarea {
     color: white;
     text-decoration: none;
   }
+}
+
+.container {
+	padding-top: 9px;
+}
+
+nav {
+	float: right;
+	
+}
+
+ul {
+	li {
+		list-style: none outside none;
+	}
+}
+
+
+/* form */
+.form-inline {
+	width: 300px;
+	float: center;
 }

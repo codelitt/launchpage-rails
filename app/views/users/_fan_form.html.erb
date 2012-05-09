@@ -1,5 +1,5 @@
-<%= form_for @user do |f| %>
+<%= form_for(@user, :html => { :class => "well form-inline"}) do |f| %>
 <%= f.text_field :email, :placeholder => "Enter your email" %>
 <%= f.hidden_field :usertype, :value => "1" %>
-<%= f.submit "Submit", class: "btn btn-large btn-primary" %>
+<%= f.submit "Submit", class: "btn" %>
 <% end %>
