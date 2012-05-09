@@ -9,7 +9,7 @@ This is filled with our content. Wouldn't take you too long to change it to fit 
 
 .gitignore includes the mail initializer because it contains passwords/usernames etc. Here is the layout for stmp through google. Just fill with your own information:
 
-ActionMailer::Base.smtp_settings = {
+<pre><code>ActionMailer::Base.smtp_settings = {
 	:address			=> "smtp.gmail.com",
 	:port					=> 587,
 	:domain 			=> "mydomain",
@@ -17,7 +17,7 @@ ActionMailer::Base.smtp_settings = {
 	:password 		=> "mypassword",
 	:authenticaton => "plain",
 	:enable_starttls_auto => true
-}
+}</code></pre>
 
 ActionMailer::Base.default_url_options[:host] = "localhost:3000"
 
