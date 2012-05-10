@@ -21,6 +21,6 @@ Items you should change to customise it for your needs (baring the obvious. I'm 
 	:enable_starttls_auto => true
 }
 
-ActionMailer::Base.default_url_options[:host] = "localhost:3000"</code></pre><br />
+ActionMailer::Base.default_url_options[:host] = "localhost:3000"</code></pre>
 
 2. You'll want to go into app/views/static/success and change the details of the social plugins to match your domain/twitter/facebook.  
