@@ -6,6 +6,7 @@ Features: <br />
 1.Email collection for two types of users <br />
 2.Social sharing <br />
 3. Auto mailer <br />
+4. Ability to export user emails via CSV <br />
 
 Items you should change to customise it for your needs (baring the obvious. I'm not listing those. You'll see the title, etc.):
 
