@@ -5,14 +5,52 @@
 	  <%= stylesheet_link_tag    "application", :media => "all" %>
 	  <%= javascript_include_tag "application" %>
 	  <%= csrf_meta_tags %>
-	  <%= render 'layouts/shim' %>
-	  <%= render 'layouts/twitterscript' %>
+	  <%= render 'layouts/shim' %>  
 	</head>
 	<body>
-		<%= render 'layouts/header' %>
-	<div class="container">
-		<%= yield %>
-		<%= render 'layouts/footer' %>
-	</div>
+		<div id="wrapper" class="clearFix">
+			<%= render 'layouts/header' %>
+			<div id="intro" class="clearFix">
+				<p>Write a little something about your project here. A little hype. C'mon, get us all excited about what you're working on! You should describe the two types of people you're looking attract to your project and lead them to the buttons below. When they click a button, their particular email submission field will be revealed. Swanky.</p>
+			</div>
+			<%= yield %>
+
+			<%= render 'layouts/footer' %>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+		<script>
+
+			(function() {
+				$('form').hide(); // Hide both email forms if JavaScript enabled
+
+				var intro = $('div#intro'); // Store the intro div as a variable
+
+				var fanForm = $('form.fanForm'); // Store User Type 1 form as a variable
+				var artistForm = $('form.artistForm'); // Store User Type 2 form as a variable
+
+				var fanBtn = $('<button></button>', {
+								text: 'I\'m User Type 1!',
+								class: 'btn fanBtn'}); // Create the "I'm User Type 1!" button
+
+				var artistBtn = $('<button></button>', {
+								text: 'I\'m User Type 2!',
+								class: 'btn artistBtn'}); // Create the "I'm User Type 2!" button
+
+				intro.append(fanBtn, artistBtn); // Place the buttons at the end of the intro
+
+				fanBtn.on('click', function(){
+					fanForm.slideToggle(250);
+				}); // Functionality for User Type 1's button - reveal email form
+
+				artistBtn.on('click', function(){
+					artistForm.slideToggle(250);
+				}); // Functionality for User Type 1's button - reveal email form
+
+			})();
+
+		</script>
+
 	</body>
 </html>
