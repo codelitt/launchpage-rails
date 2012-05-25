@@ -12,7 +12,7 @@ require 'csv'
   		redirect_to '/success'
   		UserMailer.registration_confirmation(@user).deliver
   	else 
-  		render root_path
+  		render 'new'
   	end
   end
   
