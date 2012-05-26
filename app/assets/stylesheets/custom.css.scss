@@ -1,66 +1,161 @@
 @import "bootstrap";
 
+/* --- Contents ---
+	1. Defaults, Structure & Resets
+	2. Images
+	3. Text & Links
+*/
+
+/* --- 1. Defaults, Structure & Resets --- */
+
+.clearFix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+}
+
+input[type="text"], input[type="password"], textarea, input[type="text"]:focus, textarea:focus, input[type="password"] {
+    outline: none;
+    border: none;
+}
+
+		
+header, footer, nav, section, article, aside {
+    display: block;
+}
+
+a img {
+	border: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+	
 html {
-	overflow-y: scroll;
+	font-size: 100%;
 }
 
 body {
-	padding-top: 10px;
+	font-size: 62.5%;
 }
 
-section {
-	overflow: auto;
+div#wrapper {
+	font-size: 1.0em;
+	line-height: 1.5em;
+	width: 850px;
+	margin: 0 auto;
 }
 
-textarea {
-	resize: vertical;
-}
-
-.center {
+header {
 	text-align: center;
-}
-
-.center h1 {
-	margin-bottom: 10px;
-}
-
-
-/* header */
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: c1c1c1;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 9px;
-  font-weight: bold;
-  line-height: 1;
-  &:hover {
-    color: white;
-    text-decoration: none;
-  }
-}
-
-.container {
-	padding-top: 9px;
-}
-
-nav {
-	float: right;
-	
+	margin: 30px 0;
 }
 
 ul {
-	li {
-		list-style: none outside none;
-	}
+	list-style-type: none;
 }
 
-
-/* form */
-.form-inline {
-	width: 300px;
-	float: center;
+header ul {
+	float: right;
 }
+
+div#intro {
+	width: 600px;
+	margin: 0 auto 20px auto;
+	padding: 20px;
+	text-align: justify;
+	border-radius: 5px;
+	background: #F2F2F2;
+}
+
+form {
+	margin: 0;
+}
+
+form.fanForm, form.artistForm {
+	width: 275px;
+	border-radius: 5px;
+	background: #F2F2F2;
+	padding: 20px;
+	text-align: center;
+}
+
+form.fanForm {
+	float: left;
+	margin-left: 100px;
+}
+
+form.artistForm {
+	float: right;
+	margin-right: 100px;
+}
+
+input[type="submit"] {
+	margin-bottom: 0;
+}
+
+button.fanBtn {
+	float: left;
+	margin-left: 80px;
+}
+
+button.artistBtn {
+	float: right;
+	margin-right: 80px;
+}
+
+/* --- 2. Images --- */
+
+
+
+/* --- 3. Text & Links --- */
+
+h1 {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 4.6em;
+	line-height: 1.0em;
+	font-weight: bold;
+	letter-spacing: -3px;
+	margin-bottom: 0.25em;
+	color: #000;
+}
+
+h2 {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 2.0em;
+	line-height: 1.0em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+	color: #000;
+}
+
+header p {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 1.7em;
+	line-height: 1.0em;
+	font-weight: normal;
+	color: #666;
+}
+
+div#intro p {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 1.6em;
+	line-height: 1.5em;
+	font-weight: normal;
+	color: #666;
+	text-shadow: 0 1px 1px #FFF;
+}
+
+form p {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: normal;
+	color: #666;
+	text-shadow: 0 1px 1px #FFF;
+}
+
