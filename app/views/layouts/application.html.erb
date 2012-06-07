@@ -10,16 +10,12 @@
 	<body>
 		<div id="wrapper" class="clearFix">
 			<%= render 'layouts/header' %>
-			<div id="intro" class="clearFix">
-				<p>Write a little something about your project here. A little hype. C'mon, get us all excited about what you're working on! You should describe the two types of people you're looking attract to your project and lead them to the buttons below. When they click a button, their particular email submission field will be revealed. Swanky.</p>
-			</div>
 			<%= yield %>
-
-			<%= render 'layouts/footer' %>
 		</div>
 
+		<%= render 'layouts/footer' %>
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
 		<script>
 
 			(function() {
