@@ -29,4 +29,6 @@ ActionMailer::Base.smtp_settings = {
 ActionMailer::Base.default_url_options[:host] = "localhost:3000"
 ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?</code></pre>
 
+1a. Change the email in lib/development_mail_interceptor.rb to your email so that when you're running app in development the test emails get sent to your email address. 
+
 2. You'll want to go into app/views/static/success and change the details of the social plugins to match your domain/twitter/facebook.  
