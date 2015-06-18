@@ -22,7 +22,7 @@ end
 gem 'jquery-rails', '4.0.4'
 
 group :test do 
-	gem 'capybara', '1.1.2'
+	gem 'capybara', '2.4.4'
 end 
 
 
