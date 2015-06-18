@@ -159,7 +159,7 @@ PLATFORMS
 DEPENDENCIES
   activeresource (= 4.0.0)
   bootstrap-sass (= 3.3.5)
-  capybara
+  capybara (= 2.4.4)
   coffee-rails (= 4.0.1)
   jquery-rails (= 4.0.4)
   pg (= 0.18.2)
