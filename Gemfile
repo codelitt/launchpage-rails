@@ -1,25 +1,25 @@
 source 'https://rubygems.org'
 
-gem 'rails', '~> 4.1.4'
-gem 'pg', '0.13.2'
-gem 'bootstrap-sass', '2.0.0'
-gem 'activeresource'
+gem 'rails', '~> 4.2.1'
+gem 'pg', '0.18.2'
+gem 'bootstrap-sass', '3.3.5'
+gem 'activeresource', '4.0.0'
 
 group :development, :test do 
-	gem 'rspec-rails', '2.9.0'
+	gem 'rspec-rails', '3.3.1'
 end 
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 4.0.3'
-  gem 'coffee-rails', '~> 4.0.1'
-	gem 'uglifier', '>= 1.0.3'
+  gem 'sass-rails',   '5.0.3'
+  gem 'coffee-rails', '4.0.1'
+	gem 'uglifier', '2.7.1'
 end
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby
 
-gem 'jquery-rails'
+gem 'jquery-rails', '4.0.4'
 
 group :test do 
 	gem 'capybara', '1.1.2'
