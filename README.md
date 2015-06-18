@@ -1,4 +1,6 @@
-This is a quick application to get up and running with your startup. It is written in Ruby on Rails for anyone looking to collect user emails and gauge interest before launching. We ([@mikebabb](http://github.com/mikebabb) and I), needed an application that provided signup for two types of users. Nothing on the market was really available for this… so we built it. Please fork and enjoy. I'm sure that someone will find bugs. I'm even more sure that someone in the community will make it even more awesome. It may have a bit of our content, but it wouldn't take you too long to change it to fit your need. Just a heads up. 
+[![Build Status](https://semaphoreci.com/api/v1/projects/a51d3df9-aef8-49a3-ab52-fa241c4b00f4/459208/badge.svg)](https://semaphoreci.com/kaiomagalhaes/launchpage-rails)
+
+This is a quick application to get up and running with your startup. It is written in Ruby on Rails for anyone looking to collect user emails and gauge interest before launching. We ([@mikebabb](http://github.com/mikebabb) and I), needed an application that provided signup for two types of users. Nothing on the market was really available for this… so we built it. Please fork and enjoy. I'm sure that someone will find bugs. I'm even more sure that someone in the community will make it even more awesome. It may have a bit of our content, but it wouldn't take you too long to change it to fit your need. Just a heads up.
 Cheers!
 
 Here is an example of the launchpage once it's all styled/designed: [Backstagr](http://www.backsta.gr)
