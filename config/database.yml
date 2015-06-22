@@ -4,7 +4,7 @@ development:
   database: launch_development
   pool: 5
   username: postgres
-  password: fibo@123
+  password: kty123
 
 test:
   adapter: postgresql
@@ -12,7 +12,7 @@ test:
   database: launch_test
   pool: 5
   username: postgres
-  password: fibo@123
+  password: kty123
 
 production:
   adapter: postgresql
@@ -20,4 +20,4 @@ production:
   database: launch_production
   pool: 5
   username: postgres
-  password: fibo@123
+  password: kty123
