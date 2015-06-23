@@ -6,11 +6,12 @@ RSpec.describe User, :type => :model do
     create(:user)
   end
 
-  it "when email not present" do
-    expect(build(:user_with_blank_email)).to be_invalid
-  end
+  describe 'When email' do
 
-  describe "when email format is invalid" do
+    it "is not present" do
+      expect(build(:user_with_blank_email)).to be_invalid
+    end
+
     it "should be invalid" do
       addresses = %w[user@foo,com user_at_bar.org this.user@blah.]
       addresses.each do |invalid_address|
@@ -18,23 +19,36 @@ RSpec.describe User, :type => :model do
         expect(user).to be_invalid
       end
     end
-  end
 
-  describe "when a email format is valid" do
-    it "should be valid" do
+    it "format is valid" do
       addresses = %w[me@foo.com A_FINE_USER@f.b.org my.humps@blog.jp a+b@bots.gr]
       addresses.each do |valid_address|
         user.email = valid_address
         expect(user).to be_valid
       end
     end
+
+    it "is already taken" do
+      user.save
+      expect(User.new(user.attributes)).to be_invalid
+    end
   end
 
-  it "when email is already taken" do
-    new_user = build(:user)
-    puts new_user.email
-    puts new_user.validate
-    expect(new_user).to be_invalid
-  end
+  describe 'When status' do
 
+    it 'is 1 witch means ...' do
+      user.usertype = 1
+      expect(user).to be_valid
+    end
+
+    it 'is 0 witch means ...' do
+      user.usertype = 0 
+      expect(user).to be_valid
+    end
+
+    it 'is other than 0 or 1' do
+      user.usertype = 5
+      expect(user).to be_invalid
+    end
+  end
 end

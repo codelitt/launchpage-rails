@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :user do
-    email 'pepa_pig@gmail.com'
+    email 'test@test.com'
     usertype 1
 
     factory :user_with_blank_email do
