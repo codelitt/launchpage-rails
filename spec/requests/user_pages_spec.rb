@@ -1,12 +1,9 @@
-require 'spec_helper'
+require 'rails_helper'
 
-describe "User pages" do 
+feature "User pages" do
 
-	subject { page }
-	
-	describe "signup page" do 
-		before { visit new_user_path }
-		
-		it { should have_selector('title', text: 'Backstagr') }
-	end
-end 
+  scenario "signup page" do
+    visit new_user_path
+    expect(page).to have_title 'Backstagr'
+  end
+end
