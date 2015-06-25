@@ -16,6 +16,7 @@ end
 group :test do
   gem 'factory_girl_rails'
   gem 'capybara', '2.4.4'
+  gem "codeclimate-test-reporter"
 end
 
 group :production do
