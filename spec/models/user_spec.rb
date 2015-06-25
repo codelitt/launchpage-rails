@@ -37,17 +37,17 @@ RSpec.describe User, :type => :model do
   describe 'When status' do
 
     it 'is 1 witch means ...' do
-      user.usertype = "1"
+      user.usertype = 1
       expect(user).to be_valid
     end
 
     it 'is 2 witch means ...' do
-      user.usertype = "2"
+      user.usertype = 2
       expect(user).to be_valid
     end
 
     it 'is other than 1 or 2' do
-      user.usertype = "5"
+      user.usertype = 5
       expect(user).to be_invalid
     end
   end
