@@ -69,6 +69,7 @@ ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env
 
 
 ###Contributors
+A really big thanks to [kaiomagalhaes](https://github.com/kaiomagalhaes) for updating this to Rails 4 and improving some very old code.
 
 - @codelitt
 - @mikebabb
