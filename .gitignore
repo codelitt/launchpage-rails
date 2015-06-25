@@ -18,4 +18,4 @@
 /config/initializers/setup_mail.rb
 
 #ignoring database.yml
-/config/database.iml
+/config/database.yml
