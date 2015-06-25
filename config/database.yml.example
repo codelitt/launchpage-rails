@@ -1,0 +1,22 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: launch_development
+  pool: 5
+  username: yourUsername
+  password: yourPassword
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: launch_test
+  pool: 5
+  username: yourUsername
+  password: yourPassword
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: launch_production
+  pool: 5
+  username: yourUsername
+  password: yourPassword
