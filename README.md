@@ -7,9 +7,13 @@ This is a quick application to get up and running with your new startup idea. It
 Here is an example of the launchpage once it's all styled/designed (although, both the project and design are old): [Backstagr](http://www.backsta.gr)
 
 ###Features
+
 1.Email collection for two types of users
+
 2.Social sharing
+
 3. Auto mailer
+
 4. Ability to export user emails via CSV
 
 **Coming soon**
