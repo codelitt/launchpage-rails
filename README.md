@@ -2,7 +2,9 @@
 [![Code Climate](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/gpa.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails)
 [![Test Coverage](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/coverage.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/coverage)
 
-This is a quick application to get up and running with your new startup idea. It is a prelaunch MVP landing page aimed at gathering signups and testing market interest. It was originally written as an open source alternative to LaunchRock. It is written in Ruby on Rails for anyone looking to collect user emails and gauge interest before launching. Originally, we needed an application that provided signup for two types of users for a two-sided market. I'm even more sure that someone in the community will make it even more awesome. It may have a bit of our content, but it wouldn't take you too long to change it to fit your need. Just a heads up.
+This is a quick application to get up and running quickly with your new startup idea so you can focus on your actual product. It is a prelaunch MVP landing page aimed at gathering signups and testing market interest. It was originally written as an open source alternative to LaunchRock. It is written in Ruby on Rails for anyone looking to collect user emails and gauge interest before launching. Originally, we needed an application that provided signup for two types of users for a two-sided market. Just add styling. 
+
+*It may have a bit of our content, but it wouldn't take you too long to change it to fit your need. Just a heads up.*
 
 Here is an example of the launchpage once it's all styled/designed (although, both the project and design are old): [Backstagr](http://www.backsta.gr)
 
@@ -16,7 +18,8 @@ Here is an example of the launchpage once it's all styled/designed (although, bo
 
 4. Ability to export user emails via CSV
 
-**Coming soon**
+  **Coming soon**
+
 5. Post signup survey and questionaire to gather more market research from your beta users.
 
 ###Get it running
