@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :users
   get 'static/home'
   get 'success' => 'static#success'
+  get 'csv' => 'users#export_csv', :as => :csv
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
