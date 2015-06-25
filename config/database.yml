@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: launch_development
+  pool: 5
+  username: postgres
+  password: kty123
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: launch_test
+  pool: 5
+  username: postgres
+  password: kty123
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: launch_production
+  pool: 5
+  username: postgres
+  password: kty123

@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'users#new'
   resources :users
   get 'static/home'
+  get 'success' => 'static#success'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
