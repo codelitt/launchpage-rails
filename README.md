@@ -8,9 +8,9 @@ Here is an example of the launchpage once it's all styled/designed (although, bo
 
 ###Features
 
-1.Email collection for two types of users
+1. Email collection for two types of users
 
-2.Social sharing
+2. Social sharing
 
 3. Auto mailer
 
