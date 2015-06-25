@@ -34,6 +34,9 @@ class UsersController < ApplicationController
   end
 
   def user_params
-    params.require(:user).permit(:email, :usertype)
+    user_params = params.require(:user).permit(:email, :usertype)
+    usertype = user_params[:usertype]
+    usertype = usertype.to_i if usertype.to_i
+    user_params
   end
 end
