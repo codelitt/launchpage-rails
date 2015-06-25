@@ -24,6 +24,8 @@ Here is an example of the launchpage once it's all styled/designed (although, bo
 
 5. Post signup survey and questionaire to gather more market research from your beta users.
 
+6. Waiting list social actions (i.e. move up the list if you share to 3 friends or something along these lines)
+
 ###Get it running
 Items you should change to customise it for your needs (baring the obvious. I'm not listing those. You'll see the title, etc.):
 
@@ -46,9 +48,11 @@ ActionMailer::Base.default_url_options[:host] = "localhost:3000"
 ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?
 ```
 
-- Change the email in lib/development_mail_interceptor.rb to your email so that when you're running app in development the test emails get sent to your email address. 
+  - Change the email in lib/development_mail_interceptor.rb to your email so that when you're running app in development the test emails get sent to your email address. 
 
-2. You'll want to go into app/views/static/success and change the details of the social plugins to match your domain/twitter/facebook. 
+2. You'll want to go into `app/views/static/success` as well as `app/views/layouts/_twitterscript`/`app/views/layouts/_facebookscript` and change the details of the social plugins to match your domain/twitter/facebook. It's easy to add HN, Reddit, etc.
+
+3. All the normal rails stuff to start up an app. I'm only calling out the items that need to be changed that aren't so obvious. 
 
 
 ###Contributing
@@ -57,13 +61,13 @@ ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env
 
 2. Make your changes in a new git branch:
 
-`git checkout -b my-fix-branch master`
+   `git checkout -b my-fix-branch master`
 
 3. Create your patch, including appropriate test cases making sure they pass.
 
 4. Push your branch to GitHub:
 
-`git push origin my-fix-branch` 
+   `git push origin my-fix-branch` 
 
 5. In GitHub, send a pull request to `launchpage-rails:master`
 
@@ -71,7 +75,7 @@ ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if Rails.env
 ###Contributors
 A really big thanks to [kaiomagalhaes](https://github.com/kaiomagalhaes) for updating this to Rails 4 and improving some very old code.
 
-- @codelitt
-- @mikebabb
-- @kaiomagalhaes
+- [codelitt](https://github.com/codelitt)
+- [@mikebabb](https://github.com/mikebabb)
+- [kaiomagalhaes](https://github.com/kaiomagalhaes)
  
