@@ -2,9 +2,11 @@
 [![Code Climate](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/gpa.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails)
 [![Test Coverage](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/coverage.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/coverage)
 
-This is a quick application to get up and running quickly with your new startup idea so you can focus on your actual product. It is a prelaunch MVP landing page aimed at gathering signups and testing market interest. It was originally written as an open source alternative to LaunchRock. It is written in Ruby on Rails for anyone looking to collect user emails and gauge interest before launching. Originally, we needed an application that provided signup for two types of users for a two-sided market. Just add styling. 
+This is a quick application to get up and running quickly with your new startup idea so you can focus on your actual product. It is a prelaunch MVP landing page aimed at gathering signups and testing market interest. It was originally written as an open source alternative to LaunchRock. It is written with Ruby on Rails. Originally, we needed an application that provided signup for two types of users for a two-sided market. It's out of the box, ready to go.  Just add styling. Fork and enjoy! 
 
 *It may have a bit of our content, but it wouldn't take you too long to change it to fit your need. Just a heads up.*
+
+###Example 
 
 Here is an example of the launchpage once it's all styled/designed (although, both the project and design are old): [Backstagr](http://www.backsta.gr)
 
