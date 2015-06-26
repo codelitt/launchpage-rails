@@ -50,13 +50,13 @@ for stmp below and fill with your own information:
 require 'development_mail_interceptor'
 
 ActionMailer::Base.smtp_settings = {
-:address=> "smtp.gmail.com",
-:port=> 587,
-:designedomain => "mydomain",
-:user_name => "myuser@mydomain.com",
-:password => "mypassword",
-:authenticaton => "plain",
-:enable_starttls_auto => true
+ :address              => "smtp.gmail.com",
+ :port                 => 587,
+ :designedomain        => "mydomain",
+ :user_name            => "myuser@mydomain.com",
+ :password             => "mypassword",
+ :authenticaton        => "plain",
+ :enable_starttls_auto => true
 }
 
 ActionMailer::Base.default_url_options[:host] = "localhost:3000"
@@ -64,16 +64,16 @@ ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if
 Rails.env.development?
 ```
 
-  - Change the email in lib/development_mail_interceptor.rb to your
+2. Change the email in lib/development_mail_interceptor.rb to your
     email so that when you're running app in development the test emails
 get sent to your email address.
 
-2. You'll want to go into `app/views/static/success` as well as
+3. You'll want to go into `app/views/static/success` as well as
    `app/views/layouts/_twitterscript`/`app/views/layouts/_facebookscript`
 and change the details of the social plugins to match your
 domain/twitter/facebook. It's easy to add HN, Reddit, etc.
 
-3. All the normal rails stuff to start up an app. I'm only calling out
+  - All the normal rails stuff to start up an app. I'm only calling out
    the items that need to be changed that aren't so obvious.
 
 
