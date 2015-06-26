@@ -20,7 +20,7 @@ Here is an example of the launchpage once it's all styled/designed (although, bo
 
 4. Ability to export user emails via CSV
 
-  **Coming soon**
+**Coming soon**
 
 5. Post signup survey and questionaire to gather more market research from your beta users.
 
