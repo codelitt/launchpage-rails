@@ -43,8 +43,8 @@ obvious. I'm not listing those. You'll see the title, etc.):
 
 1. The .gitignore includes the mail initializer.
 
-2. Create the file *setup_email.rb* in */config/initializers* and add
-   the layout for stmp below and fill with your own information: 
+2. Create the file *setup_email.rb* in */config/initializers* with the layout 
+for stmp below and fill with your own information: 
 
 ```ruby
 require 'development_mail_interceptor'
