@@ -73,7 +73,7 @@ get sent to your email address.
 and change the details of the social plugins to match your
 domain/twitter/facebook. It's easy to add HN, Reddit, etc.
 
-  - All the normal rails stuff to start up an app. I'm only calling out
+- All the normal rails stuff to start up an app. I'm only calling out
    the items that need to be changed that aren't so obvious.
 
 
