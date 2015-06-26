@@ -41,9 +41,9 @@ Here is an example of the launchpage once it's all styled/designed
 Items you should change to customise it for your needs (baring the
 obvious. I'm not listing those. You'll see the title, etc.):
 
-1. The .gitignore includes the mail initializer.
+  - The .gitignore includes the mail initializer.
 
-2. Create the file *setup_email.rb* in */config/initializers* with the layout 
+1. Create the file *setup_email.rb* in */config/initializers* with the layout 
 for stmp below and fill with your own information: 
 
 ```ruby
