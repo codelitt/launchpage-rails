@@ -1,6 +1,6 @@
-[![BuildStatus](https://semaphoreci.com/api/v1/projects/a51d3df9-aef8-49a3-ab52-fa241c4b00f4/459208/badge.svg)](https://semaphoreci.com/kaiomagalhaes/launchpage-rails)
-[![CodeClimate](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/gpa.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails)
-[![TestCoverage](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/coverage.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/coverage)
+[![Build Status](https://semaphoreci.com/api/v1/projects/a51d3df9-aef8-49a3-ab52-fa241c4b00f4/459208/badge.svg)](https://semaphoreci.com/kaiomagalhaes/launchpage-rails)
+[![Code Climate](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/gpa.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails)
+[![Test Coverage](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/badges/coverage.svg)](https://codeclimate.com/github/kaiomagalhaes/launchpage-rails/coverage)
 
 This is a quick application to get up and running quickly with your new
 startup idea so you can focus on your actual product. It is a prelaunch
