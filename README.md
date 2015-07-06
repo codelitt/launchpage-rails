@@ -43,32 +43,34 @@ obvious. I'm not listing those. You'll see the title, etc.):
 
   - The .gitignore includes the mail initializer.
 
-1. Create the file *setup_email.rb* in */config/initializers* with the layout 
-for stmp below and fill with your own information: 
+1. Add the following environment variables with your configuration. 
 
-```ruby
-require 'development_mail_interceptor'
+    ```
+     SMTP_ADDRESS
+     SMPT_PORT
+     DOMAIN
+     SMTP_USERNAME
+     SMTP_PASSWORD
+     FROM_EMAIL
+     MAIL_SUBJECT
+     DEV_EMAIL
+     ```
+    
+    An example, 
+    
+    ```
+     SMTP_ADDRESS= smtp.gmail.com
+     SMPT_PORT= 587
+     DOMAIN= mydomain
+     SMTP_USERNAME= myuser@mydomain.com
+     SMTP_PASSWORD= mypassword
+     FROM_EMAIL= welcome@example.com
+     MAIL_SUBJECT= Welcome to the awesome service!
+     DEV_EMAIL= test@example.com
+    ```
+More details on setting up evnvironment variables are available [here](http://railsapps.github.io/rails-environment-variables.html).
 
-ActionMailer::Base.smtp_settings = {
- :address              => "smtp.gmail.com",
- :port                 => 587,
- :designedomain        => "mydomain",
- :user_name            => "myuser@mydomain.com",
- :password             => "mypassword",
- :authenticaton        => "plain",
- :enable_starttls_auto => true
-}
-
-ActionMailer::Base.default_url_options[:host] = "localhost:3000"
-ActionMailer::Base.register_interceptor(DevelopmentMailInterceptor) if
-Rails.env.development?
-```
-
-2. Change the email in lib/development_mail_interceptor.rb to your
-    email so that when you're running app in development the test emails
-get sent to your email address.
-
-3. You'll want to go into `app/views/static/success` as well as
+2. You'll want to go into `app/views/static/success` as well as
    `app/views/layouts/_twitterscript`/`app/views/layouts/_facebookscript`
 and change the details of the social plugins to match your
 domain/twitter/facebook. It's easy to add HN, Reddit, etc.
@@ -92,7 +94,7 @@ domain/twitter/facebook. It's easy to add HN, Reddit, etc.
 
    `git push origin my-fix-branch`
 
-5. In GitHub, send a pull request to `launchpage-rails:master`
+5. In GitHub, send a pull request to `launchpage-rails:master`.
 
 
 ###Contributors

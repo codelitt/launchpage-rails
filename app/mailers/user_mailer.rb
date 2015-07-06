@@ -1,7 +1,7 @@
 class UserMailer < ActionMailer::Base
-	default :from => "info@backsta.gr"
-	
+	default :from => ENV["FROM_EMAIL"]
+
 	def registration_confirmation(user)
-		mail(:to => user.email, :subject => "Registered with Backstagr!")
+		mail(:to => user.email, :subject => ENV["MAIL_SUBJECT"])
 	end
 end
