@@ -68,6 +68,7 @@ obvious. I'm not listing those. You'll see the title, etc.):
      MAIL_SUBJECT= Welcome to the awesome service!
      DEV_EMAIL= test@example.com
     ```
+More details on setting up evnvironment variables are available [here](http://railsapps.github.io/rails-environment-variables.html).
 
 2. You'll want to go into `app/views/static/success` as well as
    `app/views/layouts/_twitterscript`/`app/views/layouts/_facebookscript`
