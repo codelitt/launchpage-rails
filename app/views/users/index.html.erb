@@ -1,0 +1,16 @@
+<h3>Howdy! There were <%= @users.count %> users registered so far..</h3>
+
+<table class="table">
+  <tr>
+    <th>Email</th>
+    <th>Created</th>
+    <th>User Type</th>
+  </tr>
+  <% @users.each do |user| %>
+    <tr>
+      <td><%= user.email %></td>
+      <td><%= user.created_at %></td>
+      <td><%= user.usertype %></td>
+    </tr>
+  <% end %>
+</table>

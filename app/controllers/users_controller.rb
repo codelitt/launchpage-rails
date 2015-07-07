@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   require 'csv'
 
+  before_action :verify_token, only: [:index, :export_csv]
+
   def new
     @user = User.new
   end
