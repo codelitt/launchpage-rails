@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
   require 'csv'
 
+  before_action :verify_token, only: [:index, :export_csv]
+
   def new
     @user = User.new
   end
@@ -33,10 +35,19 @@ class UsersController < ApplicationController
     send_data(user_csv, :type => 'text/csv', :filename => 'user_record.csv')
   end
 
+  private
+
   def user_params
     user_params = params.require(:user).permit(:email, :usertype)
     usertype = user_params[:usertype]
     usertype = usertype.to_i if usertype.to_i
     user_params
+  end
+
+  def verify_token
+    password = ENV["AUTH_TOKEN"] || "i0nlyPass"
+    unless params[:token].present? and params[:token] == password
+      render text: "You Shall Not Pass!"
+    end
   end
 end

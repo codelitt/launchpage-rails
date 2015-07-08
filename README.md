@@ -8,12 +8,12 @@ MVP landing page aimed at gathering signups and testing market interest.
 It was originally written as an open source alternative to LaunchRock.
 It is written with Ruby on Rails. Originally, we needed an application
 that provided signup for two types of users for a two-sided market. It's
-out of the box, ready to go.  Just add styling. Fork and enjoy! 
+out of the box, ready to go.  Just add styling. Fork and enjoy!
 
 *It may have a bit of our content, but it wouldn't take you too long to
 change it to fit your need. Just a heads up.*
 
-###Example 
+###Example
 
 Here is an example of the launchpage once it's all styled/designed
 (although, both the project and design are old):
@@ -43,7 +43,7 @@ obvious. I'm not listing those. You'll see the title, etc.):
 
   - The .gitignore includes the mail initializer.
 
-1. Add the following environment variables with your configuration. 
+1. Add the following environment variables with your configuration.
 
     ```
      SMTP_ADDRESS
@@ -54,10 +54,11 @@ obvious. I'm not listing those. You'll see the title, etc.):
      FROM_EMAIL
      MAIL_SUBJECT
      DEV_EMAIL
+     AUTH_TOKEN
      ```
-    
-    An example, 
-    
+
+    An example,
+
     ```
      SMTP_ADDRESS= smtp.gmail.com
      SMPT_PORT= 587
@@ -67,6 +68,7 @@ obvious. I'm not listing those. You'll see the title, etc.):
      FROM_EMAIL= welcome@example.com
      MAIL_SUBJECT= Welcome to the awesome service!
      DEV_EMAIL= test@example.com
+     AUTH_TOKEN= myPasswordForAccessingUsersList
     ```
 More details on setting up environment variables are available [here](http://railsapps.github.io/rails-environment-variables.html).
 
