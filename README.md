@@ -30,10 +30,10 @@ Here is an example of the launchpage once it's all styled/designed
 
 4. Ability to export user emails via CSV
 
-**Coming soon**
-
 5. Post signup survey and questionaire to gather more market research
    from your beta users.
+
+**Coming soon**
 
 6. Waiting list social actions (i.e. move up the list if you share to 3
    friends or something along these lines)
