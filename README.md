@@ -1,5 +1,7 @@
 [![Code Climate](https://codeclimate.com/github/codelitt/launchpage-rails/badges/gpa.svg)](https://codeclimate.com/github/codelitt/launchpage-rails)
 [![Test Coverage](https://codeclimate.com/github/codelitt/launchpage-rails/badges/coverage.svg)](https://codeclimate.com/github/codelitt/launchpage-rails/coverage)
+[![Build Status](https://semaphoreci.com/api/v1/projects/9bc21553-c95d-4769-9ea7-a3af17dc4fd1/478931/badge.svg)](https://semaphoreci.com/codelitt/launchpage-rails)      
+
 
 This is a quick application to get up and running quickly with your new
 startup idea so you can focus on your actual product. It is a prelaunch
