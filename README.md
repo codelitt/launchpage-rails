@@ -14,13 +14,13 @@ out of the box, ready to go.  Just add styling. Fork and enjoy!
 *It may have a bit of our content, but it wouldn't take you too long to
 change it to fit your need. Just a heads up.*
 
-###Example
+### Example
 
 Here is an example of the launchpage once it's all styled/designed
 (although, both the project and design are old):
 [Backstagr](http://www.backsta.gr)
 
-###Features
+### Features
 
 1. Email collection for two types of users
 
@@ -38,7 +38,7 @@ Here is an example of the launchpage once it's all styled/designed
 6. Waiting list social actions (i.e. move up the list if you share to 3
    friends or something along these lines)
 
-###Get it running
+### Get it running
 Items you should change to customise it for your needs (baring the
 obvious. I'm not listing those. You'll see the title, etc.):
 
@@ -82,7 +82,7 @@ domain/twitter/facebook. It's easy to add HN, Reddit, etc.
    the items that need to be changed that aren't so obvious.
 
 
-###Contributing
+### Contributing
 
 1. Fork the repo and clone it.
 
@@ -100,7 +100,7 @@ domain/twitter/facebook. It's easy to add HN, Reddit, etc.
 5. In GitHub, send a pull request to `launchpage-rails:master`.
 
 
-###Contributors
+### Contributors
 A really big thanks to [kaiomagalhaes](https://github.com/kaiomagalhaes)
 for updating this to Rails 4 and improving some very old code.
 
