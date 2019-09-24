@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '~> 4.2.1'
 gem 'pg', '0.18.2'
-gem 'bootstrap-sass', '3.3.5'
+gem 'bootstrap-sass', '3.4.1'
 gem 'activeresource', '4.0.0'
 gem 'sass-rails', '5.0.3'
 gem 'coffee-rails', '4.0.1'
